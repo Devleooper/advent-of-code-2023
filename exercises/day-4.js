@@ -46,8 +46,6 @@ function scratchCardsProfit() {
     Array.from(Array(lines.length)).map((u, i) => [i + 1, 1])
   );
 
-  console.log("cardsCount before: ", cardsCount);
-
   lines
     .map((line) => line.split(":"))
     .filter(([game, numbers]) => game && numbers)
